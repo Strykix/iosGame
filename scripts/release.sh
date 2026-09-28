@@ -1,10 +1,15 @@
 #!/bin/zsh
-# Archive StarBarge and upload it to App Store Connect (TestFlight + App Review).
+# Archive StarBarge for App Store Connect (TestFlight + App Review).
 # Prerequisites: the app exists in App Store Connect, and your Apple account is signed in to Xcode.
 #
 # Usage:
-#   scripts/release.sh            # bump the build number, archive, upload
-#   scripts/release.sh --no-upload  # archive + App Store export only (local check)
+#   scripts/release.sh              # bump the build number, test, archive, check the App Store
+#                                   # export, then open the archive in Xcode's Organizer to upload
+#   scripts/release.sh --no-upload  # same local checks, build number left unchanged
+#
+# Why the Organizer: for this project `xcodebuild -exportArchive` with destination=upload was
+# rejected by App Store Connect ("Invalid Signature"), while the Organizer uploaded the very
+# same archive successfully. The upload is one click there: Distribute App > App Store Connect.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -40,15 +45,14 @@ xcodebuild -project StarBarge.xcodeproj -scheme StarBarge -configuration Release
   -destination 'generic/platform=iOS' -archivePath "$BUILD_DIR/StarBarge.xcarchive" \
   -allowProvisioningUpdates archive -quiet
 
-# 4. Export (and upload) for App Store Connect.
-destination=$($UPLOAD && echo upload || echo export)
+# 4. App Store export: proves distribution signing works before uploading.
 cat > "$BUILD_DIR/ExportOptions.plist" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>method</key><string>app-store-connect</string>
-  <key>destination</key><string>$destination</string>
+  <key>destination</key><string>export</string>
   <key>teamID</key><string>$TEAM_ID</string>
   <key>signingStyle</key><string>automatic</string>
   <key>uploadSymbols</key><true/>
@@ -60,8 +64,11 @@ xcodebuild -exportArchive -archivePath "$BUILD_DIR/StarBarge.xcarchive" \
   -allowProvisioningUpdates
 
 if $UPLOAD; then
-  echo "✅ Build $version ($next) uploaded. It appears in App Store Connect > TestFlight after processing (10–30 min)."
-  echo "   Commit the build number bump: git commit -am \"Release $version ($next)\""
+  open "$BUILD_DIR/StarBarge.xcarchive"
+  echo "✅ Build $version ($next) archived and signed. Xcode's Organizer is open on it:"
+  echo "   Distribute App > App Store Connect > Upload (keep automatic signing)."
+  echo "   It appears in App Store Connect > TestFlight after processing (10–30 min)."
+  echo "   Then commit the build number bump: git commit -am \"Release $version ($next)\""
 else
   echo "✅ IPA ready: $BUILD_DIR/export/StarBarge.ipa (not uploaded)."
   sed -i '' "s/CURRENT_PROJECT_VERSION: \"$next\"/CURRENT_PROJECT_VERSION: \"$current\"/" project.yml

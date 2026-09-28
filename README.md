@@ -56,8 +56,10 @@ est dans [`store/APP_STORE.md`](store/APP_STORE.md). Les captures 6,9" sont dans
 scripts/release.sh
 ```
 
-Le script incrémente le numéro de build, lance les tests, archive puis envoie sur App Store Connect.
-Il refuse d’envoyer tant que la configuration Release utilise les IDs AdMob de test.
+Le script incrémente le numéro de build, lance les tests, archive, vérifie la signature App Store,
+puis ouvre l’archive dans l’Organizer de Xcode : **Distribute App › App Store Connect › Upload**.
+(L’envoi direct en ligne de commande était refusé par Apple pour « Invalid Signature », l’Organizer passe.)
+Il refuse de préparer un envoi tant que la configuration Release utilise les IDs AdMob de test.
 Pour vérifier sans rien envoyer :
 
 ```bash
