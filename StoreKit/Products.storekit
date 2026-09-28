@@ -1,0 +1,69 @@
+{
+  "identifier" : "5D2B8A0E-7C41-4E0B-9C1A-6F3E2D1B0A01",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "6739000001",
+      "localizations" : [
+        {
+          "description" : "Mirror skin + pink flame. 100% cosmetic.",
+          "displayName" : "Chrome Pack",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Skin miroir + flamme rose. 100 % cosmétique.",
+          "displayName" : "Pack Chrome",
+          "locale" : "fr"
+        }
+      ],
+      "productID" : "com.starship.pack.chrome",
+      "referenceName" : "Chrome Pack",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "6.99",
+      "familyShareable" : true,
+      "internalID" : "6739000002",
+      "localizations" : [
+        {
+          "description" : "Unlocks every skin, now and later.",
+          "displayName" : "Fleet Pack",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Débloque tous les skins, maintenant et plus tard.",
+          "displayName" : "Pack Flotte",
+          "locale" : "fr"
+        }
+      ],
+      "productID" : "com.starship.pack.fleet",
+      "referenceName" : "Fleet Pack",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "fr_FR",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "FRA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

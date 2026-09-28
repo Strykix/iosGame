@@ -1,0 +1,159 @@
+/* STARSHIP: DON'T POP — English */
+
+/* Launch */
+"launch.subtitle" = "Hold on until orbit.";
+"launch.tap" = "TAP TO LAUNCH";
+"launch.howto" = "Finger down = full throttle · Release = fall\nDon’t overheat. Don’t drop.";
+"launch.best" = "BEST %@ pts · %@ km";
+"launch.challenge.title" = "FRIEND CHALLENGE";
+"launch.challenge.target" = "Same trajectory. Beat %@ pts.";
+
+/* HUD */
+"hud.km" = "KM";
+"hud.style" = "+%@ style";
+"hud.streak" = "CLEAN ×%d";
+"hint.hold.liftoff" = "HOLD TO LIFT OFF";
+"hint.hold.resume" = "HOLD TO RESUME";
+"hint.staging.release" = "HOT STAGING!\nRELEASE… THEN TAP";
+"hint.staging.tap" = "TAP!";
+"hint.overheat" = "OVERHEATING! RELEASE";
+"hint.wind" = "THROTTLE! WIND IS TIPPING YOU";
+"hint.falling" = "FALLING! PUSH";
+"hint.fuel" = "LOW FUEL";
+"hint.turbulence" = "TURBULENCE";
+
+/* Phases & tiers */
+"phase.pad" = "ON THE PAD";
+"phase.boost" = "BOOST";
+"phase.hotStaging" = "HOT STAGING";
+"phase.orbitBurn" = "ORBIT BURN";
+"phase.orbit" = "ORBIT";
+"tier.troposphere" = "Troposphere";
+"tier.stratosphere" = "Stratosphere";
+"tier.mesosphere" = "Mesosphere";
+"marker.tier" = "%@ · %d KM";
+"marker.karman" = "KÁRMÁN LINE · 100 KM";
+"marker.staging" = "HOT STAGING ZONE — release, then tap";
+
+/* Obstacles */
+"obstacle.camera" = "ELON CAM";
+"obstacle.wind.right" = "WIND SHEAR →";
+"obstacle.wind.left" = "← WIND SHEAR";
+"obstacle.turbulence" = "TURBULENCE";
+
+/* In-game FX */
+"fx.staging.window" = "HOT STAGING!";
+"fx.clean.staging" = "CLEAN STAGING!";
+"fx.sloppy.staging" = "Sloppy staging…";
+"fx.near.miss" = "NEAR MISS! +150";
+"fx.spicy" = "SPICY +50";
+"fx.splat" = "SPLAT!";
+"fx.pfff" = "pfff…";
+"fx.no.signal" = "NO SIGNAL";
+"fx.orbit" = "ORBIT!";
+"fx.replay" = "● REPLAY";
+
+/* Fails */
+"fail.rud.title" = "RUD";
+"fail.rud.subtitle" = "Rapid Unscheduled Disassembly";
+"fail.bellyFlop.title" = "BELLY FLOP";
+"fail.bellyFlop.subtitle" = "Back to the ground… belly first";
+"fail.turtleMode.title" = "TURTLE MODE";
+"fail.turtleMode.subtitle" = "The wind flipped you over";
+"fail.livestreamEnded.title" = "LIVESTREAM ENDED";
+"fail.livestreamEnded.subtitle" = "You hit the camera";
+"fail.outOfFuel.title" = "OUT OF FUEL";
+"fail.outOfFuel.subtitle" = "Tank empty";
+"win.title" = "ORBIT!";
+"win.subtitle" = "Kármán line crossed";
+
+/* Memes */
+"meme.rud.1" = "Another RUD";
+"meme.rud.2" = "That was the plan. Mostly.";
+"meme.bellyflop.1" = "The ground was closer than expected";
+"meme.bellyflop.2" = "10/10 for the dive";
+"meme.turtle.1" = "Turtle mode activated 🐢";
+"meme.turtle.2" = "Wind: 1 — You: 0";
+"meme.livestream.1" = "The livestream cut out at the best part";
+"meme.livestream.2" = "Thanks for watching!";
+"meme.fuel.1" = "Fuel: 0, ego: 100";
+"meme.fuel.2" = "Someone forgot to fill up";
+"meme.generic.tweet" = "Elon tweeted";
+"meme.almost" = "Almost orbit";
+"meme.orbit.1" = "Houston, we got lucky";
+"meme.orbit.2" = "Orbit reached. Ego: also in orbit.";
+
+/* Game over */
+"gameover.altitude" = "ALTITUDE";
+"gameover.score" = "SCORE";
+"gameover.best" = "BEST";
+"gameover.newbest" = "NEW BEST";
+"gameover.clean.streak" = "CLEAN STAGING ×%d";
+"gameover.nearmiss" = "%d near misses";
+"gameover.unlocked" = "Unlocked: %@";
+"gameover.challenge.won" = "CHALLENGE BEATEN!";
+"gameover.challenge.missing" = "Challenge: %@ pts to go";
+"gameover.code" = "CODE";
+"gameover.share" = "SHARE";
+"gameover.share.x" = "Share on X";
+"gameover.share.stories" = "Share to Stories";
+"gameover.continue" = "Continue (ad)";
+"gameover.retry.staging" = "From staging (ad)";
+"gameover.relaunch" = "RELAUNCH";
+"gameover.menu" = "Menu";
+
+/* Share */
+"share.text.orbit" = "🚀 REACHED ORBIT with %d pts in STARSHIP: DON'T POP!";
+"share.text.fail" = "💥 %@ km and then… “%@”";
+"share.text.dare" = "Beat my %d pts on the same trajectory, code %@ 👇";
+"share.card.score" = "%@ pts";
+"share.card.beat" = "BEAT ME WITH THIS CODE";
+
+/* Hangar */
+"hangar.title" = "Hangar";
+"hangar.skins" = "Skins";
+"hangar.shop" = "Shop";
+"hangar.settings" = "Settings";
+"hangar.equip" = "Tap to equip";
+"hangar.equipped" = "EQUIPPED";
+"hangar.stat.best" = "BEST";
+"hangar.stat.altitude" = "MAX KM";
+"hangar.stat.orbits" = "ORBITS";
+"hangar.stat.streak" = "MAX CLEAN";
+
+"skin.prototype.name" = "Prototype";
+"skin.prototype.unlock" = "Free";
+"skin.flight11.name" = "Flight 11";
+"skin.flight11.unlock" = "Reach hot staging";
+"skin.banana.name" = "Banana";
+"skin.banana.unlock" = "Fail 10 flights (be brave)";
+"skin.recovered.name" = "Booster recovered";
+"skin.recovered.unlock" = "Reach orbit";
+"skin.chrome.name" = "Chrome";
+"skin.chrome.unlock" = "Chrome or Fleet pack";
+
+"shop.chrome.title" = "Chrome Pack";
+"shop.chrome.description" = "Mirror skin + pink flame. 100% cosmetic.";
+"shop.fleet.title" = "Fleet Pack";
+"shop.fleet.description" = "Unlocks EVERY skin, now and later.";
+"shop.restore" = "Restore purchases";
+"shop.cosmetic.note" = "Cosmetic purchases only: no gameplay advantage, no energy, no pay-to-win.";
+"store.error.title" = "Purchase failed";
+"store.error.verification" = "The transaction could not be verified.";
+
+"settings.sound" = "Sound effects";
+"settings.haptics" = "Haptics";
+"settings.privacy" = "Ad privacy settings";
+
+"legal.parody" = "Independent parody game. StarBarge and X-Boost are fictional. Not affiliated with any real space company.";
+
+/* Ads (DEBUG mock) */
+"ad.mock.title" = "Rewarded ad (mock)";
+"ad.mock.message" = "DEBUG build: no real ad. Watch to get the reward?";
+"ad.mock.watch" = "Watch";
+"ad.mock.skip" = "Cancel";
+
+/* Common */
+"common.close" = "Close";
+"common.done" = "Done";
+"common.ok" = "OK";
