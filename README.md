@@ -47,6 +47,23 @@ Tests unitaires de la simulation (physique, winnability, staging, codes défi) :
 xcodebuild test -scheme StarBarge -destination 'platform=iOS Simulator,name=iPhone 17'
 ```
 
+## 1 bis. Publier une version
+
+La fiche App Store complète (textes FR/EN, achats, notes de review, questionnaire d’âge, confidentialité)
+est dans [`store/APP_STORE.md`](store/APP_STORE.md). Les captures 6,9" sont dans `store/screenshots/`.
+
+```bash
+scripts/release.sh
+```
+
+Le script incrémente le numéro de build, lance les tests, archive puis envoie sur App Store Connect.
+Il refuse d’envoyer tant que la configuration Release utilise les IDs AdMob de test.
+Pour vérifier sans rien envoyer :
+
+```bash
+scripts/release.sh --no-upload
+```
+
 ## 2. Tester les achats in-app
 
 ### En local (sans compte, recommandé pour dev)

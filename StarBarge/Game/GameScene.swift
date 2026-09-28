@@ -45,6 +45,10 @@ final class GameScene: SKScene {
     private(set) var history: [GameSimulation] = []
     private(set) var stagingSnapshot: GameSimulation?
     private(set) var failedSimulation: GameSimulation?
+    #if DEBUG
+    /// Demo / screenshot bot (`-autopilot` launch argument).
+    var autopilot: Autopilot?
+    #endif
 
     private var skin: Skin = .prototype
     private var isThrottling = false
@@ -124,6 +128,9 @@ final class GameScene: SKScene {
             applySkinTextures()
         }
         simulation = GameSimulation(seed: seed)
+        #if DEBUG
+        if autopilot != nil { autopilot = Autopilot() }
+        #endif
         history.removeAll(keepingCapacity: true)
         stagingSnapshot = nil
         failedSimulation = nil
@@ -152,6 +159,12 @@ final class GameScene: SKScene {
     func releaseAllTouches() {
         isThrottling = false
     }
+
+    #if DEBUG
+    func startAutopilotRun() {
+        if mode == .ready { mode = .running }
+    }
+    #endif
 
     // MARK: - Touches (the whole control scheme)
 
@@ -188,7 +201,11 @@ final class GameScene: SKScene {
 
         switch mode {
         case .running:
-            let events = simulation.step(dt: dt, throttleInput: isThrottling)
+            var throttle = isThrottling
+            #if DEBUG
+            if let decision = autopilot?.throttle(for: simulation) { throttle = decision }
+            #endif
+            let events = simulation.step(dt: dt, throttleInput: throttle)
             record()
             render(simulation, positionRocket: true)
             handle(events)

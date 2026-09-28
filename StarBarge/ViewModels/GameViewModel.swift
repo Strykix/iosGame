@@ -36,6 +36,11 @@ final class GameViewModel: ObservableObject {
         scene = GameScene(size: CGSize(width: 390, height: 844))
         scene.scaleMode = .resizeFill
         scene.gameDelegate = self
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-autopilot") {
+            scene.autopilot = Autopilot()
+        }
+        #endif
         store.onEntitlementsChanged = { [weak profile] owned in
             profile?.setOwnedProducts(owned)
         }
@@ -67,6 +72,9 @@ final class GameViewModel: ObservableObject {
         haptics.tap()
         sound.play(.ui)
         screen = .run
+        #if DEBUG
+        if scene.autopilot != nil { scene.startAutopilotRun() }
+        #endif
     }
 
     /// Instant restart from the game-over screen.
@@ -97,6 +105,11 @@ final class GameViewModel: ObservableObject {
 
     private func prepareRun() {
         currentSeed = challenge?.seed ?? UInt32.random(in: 1...UInt32.max)
+        #if DEBUG
+        // `-seed N` launch argument: replay a known trajectory (demos, screenshots).
+        let forcedSeed = UserDefaults.standard.integer(forKey: "seed")
+        if forcedSeed > 0 { currentSeed = UInt32(forcedSeed) }
+        #endif
         secondChanceUsed = false
         isContinuation = false
         result = nil

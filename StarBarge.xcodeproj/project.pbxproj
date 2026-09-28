@@ -13,6 +13,7 @@
 		12E0F4997B06857E540B6EF9 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E4C0EF31C9C3A60349CB8 /* GameViewModel.swift */; };
 		16EE41C9E6DE6127CCD6F09B /* GameSimulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AA7D548C1B87EF5360AD33 /* GameSimulationTests.swift */; };
 		1ACCA97EE86223278F670816 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDF12E5CE9B224A5F6FB1 /* ProfileStore.swift */; };
+		1AEB7449F2EC2F16416B8F4D /* Autopilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A8A09CD108828010FCE7FD /* Autopilot.swift */; };
 		1F6B8AD626CAA079F52DCC33 /* HangarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2E8F7797ACAFC0383E08D /* HangarViewModel.swift */; };
 		28BD7C6AF1F4E0B586FE5838 /* AdMobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366734E2AFA989E592A56900 /* AdMobService.swift */; };
 		321304E77A5E0FD5DBBD224C /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CBBA5DEAD7B77C208004F /* HapticsService.swift */; };
@@ -77,6 +78,7 @@
 		8CB6E05BCD324E6B8CA785AE /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
 		8D4EFD255CD3A5C27D5C9A90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		933F037CF723F95C199ECED7 /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
+		A6A8A09CD108828010FCE7FD /* Autopilot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autopilot.swift; sourceTree = "<group>"; };
 		BA9BE67F02F83201AA6DF4EC /* StarBarge.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StarBarge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02CBBA5DEAD7B77C208004F /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
 		D01112B8FD2ECB2AB2B9DAA7 /* FailReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailReason.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				6E9C55A7451B12B85B0B2DA5 /* Artwork.swift */,
+				A6A8A09CD108828010FCE7FD /* Autopilot.swift */,
 				0ACECCAF56B06ECA36FDA1F6 /* GameConfig.swift */,
 				4CE2AE6253036EB31F8DD4C5 /* GameScene.swift */,
 				613F9DAFF208A0CCCC37DEA5 /* GameSimulation.swift */,
@@ -290,7 +293,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					E4086DC446747FF373AC0275 = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = FP4HC6MKJ6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,6 +353,7 @@
 				583B2B532B3449E617ED8A27 /* AdService.swift in Sources */,
 				DF3EEFFC532C02C615664F34 /* AppLinks.swift in Sources */,
 				04E0715B94C21BDE4FCD2850 /* Artwork.swift in Sources */,
+				1AEB7449F2EC2F16416B8F4D /* Autopilot.swift in Sources */,
 				54D906D57253282710228C7A /* Components.swift in Sources */,
 				35B26D830CD20A9A28AEB10A /* FailReason.swift in Sources */,
 				668585A5AA396CB66D8B4129 /* GameConfig.swift in Sources */,
@@ -451,7 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FP4HC6MKJ6;
 				INFOPLIST_FILE = StarBarge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,7 +607,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FP4HC6MKJ6;
 				INFOPLIST_FILE = StarBarge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
