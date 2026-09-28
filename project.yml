@@ -89,8 +89,8 @@ targets:
           ADMOB_REWARDED_UNIT_ID: ca-app-pub-3940256099942544/1712485313
         # ⚠️ Replace with YOUR IDs from admob.google.com before shipping, then run `xcodegen generate`.
         Release:
-          ADMOB_APP_ID: ca-app-pub-3940256099942544~1458002511
-          ADMOB_REWARDED_UNIT_ID: ca-app-pub-3940256099942544/1712485313
+          ADMOB_APP_ID: ca-app-pub-1674384587306805~6336867070
+          ADMOB_REWARDED_UNIT_ID: ca-app-pub-1674384587306805/1220271763
 
   StarBargeTests:
     type: bundle.unit-test
