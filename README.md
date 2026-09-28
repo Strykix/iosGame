@@ -1,4 +1,4 @@
-# STARSHIP: DON'T POP
+# STARBARGE: DON'T POP
 
 > Tiens jusqu’à l’orbite.
 
@@ -21,7 +21,7 @@ Le projet `.xcodeproj` est généré par [XcodeGen](https://github.com/yonaskolb
 Il est versionné, donc tu peux l’ouvrir directement :
 
 ```bash
-open StarshipDontPop.xcodeproj
+open StarBarge.xcodeproj
 ```
 
 Si tu modifies `project.yml` ou si tu ajoutes des fichiers :
@@ -36,27 +36,27 @@ xcodegen generate
 
 Ensuite :
 
-1. Sélectionne la cible **StarshipDontPop** > *Signing & Capabilities*, choisis ta **Team**.
-   Le bundle ID est `com.indie.starshipdontpop`.
+1. Sélectionne la cible **StarBarge** > *Signing & Capabilities*, choisis ta **Team**.
+   Le bundle ID est `com.indie.starbarge`.
 2. Ajoute la capability **In-App Purchase**.
 3. Choisis un simulateur iPhone, puis ⌘R.
 
 Tests unitaires de la simulation (physique, winnability, staging, codes défi) : ⌘U, ou :
 
 ```bash
-xcodebuild test -scheme StarshipDontPop -destination 'platform=iOS Simulator,name=iPhone 17'
+xcodebuild test -scheme StarBarge -destination 'platform=iOS Simulator,name=iPhone 17'
 ```
 
 ## 2. Tester les achats in-app
 
 ### En local (sans compte, recommandé pour dev)
 
-Le schéma `StarshipDontPop` pointe déjà sur `StoreKit/Products.storekit` (vitrine FRA, prix en €) :
+Le schéma `StarBarge` pointe déjà sur `StoreKit/Products.storekit` (vitrine FRA, prix en €) :
 
 | Product ID | Type | Prix |
 |---|---|---|
-| `com.starship.pack.chrome` | Non-consumable | 2,99 € |
-| `com.starship.pack.fleet` | Non-consumable | 6,99 € |
+| `com.indie.starbarge.pack.chrome` | Non-consumable | 2,99 € |
+| `com.indie.starbarge.pack.fleet` | Non-consumable | 6,99 € |
 
 Lance l’app, va dans **Hangar > Boutique** et achète : aucun paiement réel.
 Dans Xcode : **Debug > StoreKit > Manage Transactions** pour rembourser ou supprimer une transaction.
@@ -64,7 +64,7 @@ Le skin Chrome se re-verrouille alors automatiquement.
 
 ### Sandbox (App Store Connect)
 
-1. Dans App Store Connect, crée l’app avec le bundle ID `com.indie.starshipdontpop`.
+1. Dans App Store Connect, crée l’app avec le bundle ID `com.indie.starbarge`.
 2. Dans *Monetization > In-App Purchases*, crée les deux **Non-Consumable** avec les product IDs ci-dessus,
    en prix Tier 2,99 € et 6,99 €, avec une capture d’écran de review (le Hangar).
 3. Dans *Users and Access > Sandbox*, crée un testeur sandbox.
@@ -158,7 +158,7 @@ Astuce : pour une capture en vol propre, maintiens le doigt (clic maintenu) puis
 - **Game over** : phrase meme, replay en slow-motion des 3 dernières secondes, bouton PARTAGER
   (image 9:16 + texte prérempli), bouton 𝕏 (intent prérempli) et bouton Stories.
 - **Défi** : chaque partage contient un code (`K3F9Q-12450`) et un lien
-  `starshipdontpop://challenge?seed=…&score=…`. Le même seed donne la même trajectoire,
+  `starbarge://challenge?seed=…&score=…`. Le même seed donne la même trajectoire,
   et ton ami doit battre ton score.
 - À configurer dans `Services/ShareService.swift` (`ShareConfig`) :
   - `webChallengeBase` : un domaine en universal link (sinon les liens ne sont pas cliquables dans X ou Instagram).
@@ -173,7 +173,7 @@ Astuce : pour une capture en vol propre, maintiens le doigt (clic maintenu) puis
 | Jauges | Chaleur (monte en poussée, surtout à haute vitesse) ; carburant (booster, puis ship après staging) |
 | Phases | **BOOST** 0–36 km → **HOT STAGING** 36–44 km (relâche puis re-tape en moins de 0,55 s = *clean staging*) → **ORBIT BURN** → 100 km |
 | Paliers | Troposphère (0–12), Stratosphère (12–50), Mésosphère (50–100), avec des turbulences à chaque palier |
-| Obstacles | Cisaillement de vent (couche la fusée si tu relâches), débris, caméra Elon (drone), turbulences |
+| Obstacles | Cisaillement de vent (couche la fusée si tu relâches), débris, caméra du patron (drone), turbulences |
 | Fails | RUD (surchauffe/débris), Belly flop (chute), Mode tortue (inclinaison), Livestream terminé (caméra), Panne sèche |
 | Score | altitude × 100 + style (clean staging +1000, frôlé +150, « ça chauffe » +50/s, orbite +5000) |
 | Skins | Prototype (offert), Flight 11 (atteindre le staging), Banane (10 échecs), Booster recovered (orbite), Chrome (IAP) |
@@ -184,7 +184,7 @@ déterministe : les tests unitaires font jouer un bot pour vérifier qu’une tr
 ## 7. Architecture
 
 ```
-StarshipDontPop/
+StarBarge/
   App/          point d’entrée
   Game/         GameSimulation (logique pure), GameScene (rendu SpriteKit), Artwork (dessin procédural), GameConfig
   Models/       SaveData, RunResult, Skin, FailReason / GameEvent
@@ -196,15 +196,27 @@ StoreKit/       Products.storekit (tests IAP locaux)
 scripts/        generate_icon.swift (icône 1024 générée en code)
 ```
 
-## 8. ⚠️ Avant de soumettre à l’App Store
+## 8. Pages web (confidentialité, support)
 
-- **Marque « Starship »** : c’est une marque déposée de SpaceX. Un titre qui la contient risque un rejet
-  (guidelines 4.1 / 5.2.1) ou une plainte. Le jeu utilise déjà des noms parodiques (StarBarge, X-Boost),
-  mais je conseille un nom de store du type **« DON'T POP: Rocket Staging »**, avec le sous-titre
-  *« Tiens jusqu’à l’orbite »*.
-- **Personne réelle** : « caméra Elon » et « Elon a tweeté » citent une personne réelle (guideline 5.2.1).
-  Ces textes sont isolés dans `Localizable.strings` (`obstacle.camera`, `meme.generic.tweet`) :
-  remplace-les par exemple par « CAMÉRA DU PATRON » / « Le patron a tweeté » si la review bloque.
-- **Âge** : pas de violence réaliste (explosions cartoon), pas d’achats aléatoires, donc 4+.
+Le dossier `docs/` est publié par GitHub Pages :
+
+| Page | URL |
+|---|---|
+| Support | https://strykix.github.io/iosGame/ |
+| Politique de confidentialité | https://strykix.github.io/iosGame/privacy.html |
+
+Ce sont les URLs à renseigner dans App Store Connect et la Play Console. Le lien vers la politique de confidentialité
+est aussi dans l’app (**Hangar > Réglages**), comme l’exige Apple. Les URLs sont définies dans `StarBarge/App/AppLinks.swift`.
+
+`app-ads.txt` doit être à la **racine** du domaine déclaré comme site du développeur :
+une page de projet GitHub (`/iosGame/`) ne convient pas. Utilise un dépôt `Strykix.github.io` ou ton propre domaine.
+
+## 9. Avant de soumettre
+
+- **Nom** : StarBarge est un nom parodique. Vérifie qu’il est libre sur l’App Store et le Play Store
+  (le nom de store doit être unique) avant de créer la fiche.
+- **Âge** : pas de violence réaliste (explosions cartoon), pas d’achats aléatoires.
 - **AdMob** : remplace les IDs de test par les tiens en Release (section 3), sinon tu ne gagnes rien.
 - **Confidentialité** : remplis le *Privacy Nutrition Label* pour AdMob (section 3).
+- **Mentions légales** : pour un site professionnel, la loi (LCEN) demande aussi une adresse et un téléphone
+  de l’éditeur (une domiciliation convient). Complète `docs/index.html` si besoin.

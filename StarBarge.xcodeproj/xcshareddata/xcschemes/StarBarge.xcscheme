@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6D5020C4A2D7B1DC88965BC8"
-               BuildableName = "StarshipDontPop.app"
-               BlueprintName = "StarshipDontPop"
-               ReferencedContainer = "container:StarshipDontPop.xcodeproj">
+               BlueprintIdentifier = "E4086DC446747FF373AC0275"
+               BuildableName = "StarBarge.app"
+               BlueprintName = "StarBarge"
+               ReferencedContainer = "container:StarBarge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,10 +29,10 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88174CC94D4D7B5F2C92F42F"
-               BuildableName = "StarshipDontPopTests.xctest"
-               BlueprintName = "StarshipDontPopTests"
-               ReferencedContainer = "container:StarshipDontPop.xcodeproj">
+               BlueprintIdentifier = "13B2CB3D64EBCFC79370BD03"
+               BuildableName = "StarBargeTests.xctest"
+               BlueprintName = "StarBargeTests"
+               ReferencedContainer = "container:StarBarge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,10 +46,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6D5020C4A2D7B1DC88965BC8"
-            BuildableName = "StarshipDontPop.app"
-            BlueprintName = "StarshipDontPop"
-            ReferencedContainer = "container:StarshipDontPop.xcodeproj">
+            BlueprintIdentifier = "E4086DC446747FF373AC0275"
+            BuildableName = "StarBarge.app"
+            BlueprintName = "StarBarge"
+            ReferencedContainer = "container:StarBarge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -58,10 +58,10 @@
             parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88174CC94D4D7B5F2C92F42F"
-               BuildableName = "StarshipDontPopTests.xctest"
-               BlueprintName = "StarshipDontPopTests"
-               ReferencedContainer = "container:StarshipDontPop.xcodeproj">
+               BlueprintIdentifier = "13B2CB3D64EBCFC79370BD03"
+               BuildableName = "StarBargeTests.xctest"
+               BlueprintName = "StarBargeTests"
+               ReferencedContainer = "container:StarBarge.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -82,10 +82,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6D5020C4A2D7B1DC88965BC8"
-            BuildableName = "StarshipDontPop.app"
-            BlueprintName = "StarshipDontPop"
-            ReferencedContainer = "container:StarshipDontPop.xcodeproj">
+            BlueprintIdentifier = "E4086DC446747FF373AC0275"
+            BuildableName = "StarBarge.app"
+            BlueprintName = "StarBarge"
+            ReferencedContainer = "container:StarBarge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -104,10 +104,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6D5020C4A2D7B1DC88965BC8"
-            BuildableName = "StarshipDontPop.app"
-            BlueprintName = "StarshipDontPop"
-            ReferencedContainer = "container:StarshipDontPop.xcodeproj">
+            BlueprintIdentifier = "E4086DC446747FF373AC0275"
+            BuildableName = "StarBarge.app"
+            BlueprintName = "StarBarge"
+            ReferencedContainer = "container:StarBarge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

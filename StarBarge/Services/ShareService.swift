@@ -3,8 +3,8 @@ import UIKit
 
 /// Viral loop: pre-filled text, challenge deep link (same seed = same course), X intent, IG Stories.
 enum ShareConfig {
-    static let urlScheme = "starshipdontpop"
-    static let hashtag = "#StarshipDontPop"
+    static let urlScheme = "starbarge"
+    static let hashtag = "#StarBarge"
     /// Set to your universal-link domain (e.g. "https://dontpop.app/c") once you host one.
     /// Custom-scheme links are not clickable inside X / Instagram, universal links are.
     static let webChallengeBase: String? = nil
@@ -34,7 +34,7 @@ struct Challenge: Equatable {
         self.init(seed: seed, score: score)
     }
 
-    /// starshipdontpop://challenge?seed=123&score=4567  or  starshipdontpop://c/K3F9Q-4567
+    /// starbarge://challenge?seed=123&score=4567  or  starbarge://c/K3F9Q-4567
     init?(url: URL) {
         let isAppScheme = url.scheme == ShareConfig.urlScheme
         let isWebLink = ShareConfig.webChallengeBase.map { url.absoluteString.hasPrefix($0) } ?? false

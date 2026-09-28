@@ -15,7 +15,7 @@ struct ShareCardView: View {
 
             VStack(spacing: 14) {
                 VStack(spacing: -4) {
-                    Text("STARSHIP")
+                    Text("STARBARGE")
                         .font(Theme.display(18))
                         .kerning(5)
                         .foregroundStyle(.white.opacity(0.8))

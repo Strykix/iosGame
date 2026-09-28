@@ -1,8 +1,8 @@
 import Foundation
 
 enum ProductID {
-    static let chromePack = "com.starship.pack.chrome"
-    static let fleetPack = "com.starship.pack.fleet"
+    static let chromePack = "com.indie.starbarge.pack.chrome"
+    static let fleetPack = "com.indie.starbarge.pack.fleet"
     static let all = [chromePack, fleetPack]
 }
 

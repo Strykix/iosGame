@@ -1,4 +1,4 @@
-/* STARSHIP: DON'T POP — English */
+/* STARBARGE: DON'T POP — English */
 
 /* Launch */
 "launch.subtitle" = "Hold on until orbit.";
@@ -36,7 +36,7 @@
 "marker.staging" = "HOT STAGING ZONE — release, then tap";
 
 /* Obstacles */
-"obstacle.camera" = "ELON CAM";
+"obstacle.camera" = "BOSS CAM";
 "obstacle.wind.right" = "WIND SHEAR →";
 "obstacle.wind.left" = "← WIND SHEAR";
 "obstacle.turbulence" = "TURBULENCE";
@@ -78,7 +78,7 @@
 "meme.livestream.2" = "Thanks for watching!";
 "meme.fuel.1" = "Fuel: 0, ego: 100";
 "meme.fuel.2" = "Someone forgot to fill up";
-"meme.generic.tweet" = "Elon tweeted";
+"meme.generic.tweet" = "The boss tweeted";
 "meme.almost" = "Almost orbit";
 "meme.orbit.1" = "Houston, we got lucky";
 "meme.orbit.2" = "Orbit reached. Ego: also in orbit.";
@@ -103,7 +103,7 @@
 "gameover.menu" = "Menu";
 
 /* Share */
-"share.text.orbit" = "🚀 REACHED ORBIT with %d pts in STARSHIP: DON'T POP!";
+"share.text.orbit" = "🚀 REACHED ORBIT with %d pts in STARBARGE: DON'T POP!";
 "share.text.fail" = "💥 %@ km and then… “%@”";
 "share.text.dare" = "Beat my %d pts on the same trajectory, code %@ 👇";
 "share.card.score" = "%@ pts";
@@ -145,7 +145,8 @@
 "settings.haptics" = "Haptics";
 "settings.privacy" = "Ad privacy settings";
 
-"legal.parody" = "Independent parody game. StarBarge and X-Boost are fictional. Not affiliated with any real space company.";
+"legal.parody" = "StarBarge is an independent parody game, not affiliated with any real space company.";
+"legal.privacy" = "Privacy policy";
 
 /* Ads (DEBUG mock) */
 "ad.mock.title" = "Rewarded ad (mock)";

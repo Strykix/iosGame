@@ -175,7 +175,7 @@ struct GameOverView: View {
                 ShareLink(
                     item: Image(uiImage: image),
                     message: Text(vm.shareText),
-                    preview: SharePreview(Text("STARSHIP: DON'T POP"), image: Image(uiImage: image))
+                    preview: SharePreview(Text("STARBARGE: DON'T POP"), image: Image(uiImage: image))
                 ) {
                     Label("gameover.share", systemImage: "square.and.arrow.up")
                 }

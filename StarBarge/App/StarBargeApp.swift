@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct StarshipDontPopApp: App {
+struct StarBargeApp: App {
     @StateObject private var viewModel: GameViewModel
 
     init() {

@@ -1,4 +1,4 @@
-name: StarshipDontPop
+name: StarBarge
 options:
   bundleIdPrefix: com.indie
   deploymentTarget:
@@ -29,17 +29,17 @@ fileGroups:
   - project.yml
 
 targets:
-  StarshipDontPop:
+  StarBarge:
     type: application
     platform: iOS
     sources:
-      - path: StarshipDontPop
+      - path: StarBarge
     dependencies:
       - package: GoogleMobileAds
       - package: GoogleUserMessagingPlatform
         product: GoogleUserMessagingPlatform
     info:
-      path: StarshipDontPop/Info.plist
+      path: StarBarge/Info.plist
       properties:
         CFBundleDisplayName: "Don't Pop"
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
@@ -59,8 +59,8 @@ targets:
           UIApplicationSupportsMultipleScenes: false
         LSApplicationQueriesSchemes: [instagram-stories]
         CFBundleURLTypes:
-          - CFBundleURLName: com.indie.starshipdontpop.challenge
-            CFBundleURLSchemes: [starshipdontpop]
+          - CFBundleURLName: com.indie.starbarge.challenge
+            CFBundleURLSchemes: [starbarge]
         # AdMob — values come from the ADMOB_* build settings below (per configuration).
         GADApplicationIdentifier: "$(ADMOB_APP_ID)"
         AdMobRewardedUnitID: "$(ADMOB_REWARDED_UNIT_ID)"
@@ -72,8 +72,8 @@ targets:
           - SKAdNetworkIdentifier: cstr6suwn9.skadnetwork
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.indie.starshipdontpop
-        PRODUCT_NAME: StarshipDontPop
+        PRODUCT_BUNDLE_IDENTIFIER: com.indie.starbarge
+        PRODUCT_NAME: StarBarge
         TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
@@ -92,32 +92,32 @@ targets:
           ADMOB_APP_ID: ca-app-pub-3940256099942544~1458002511
           ADMOB_REWARDED_UNIT_ID: ca-app-pub-3940256099942544/1712485313
 
-  StarshipDontPopTests:
+  StarBargeTests:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - path: StarshipDontPopTests
+      - path: StarBargeTests
     dependencies:
-      - target: StarshipDontPop
+      - target: StarBarge
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.indie.starshipdontpop.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.indie.starbarge.tests
         GENERATE_INFOPLIST_FILE: YES
-        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/StarshipDontPop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarshipDontPop"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/StarBarge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarBarge"
         BUNDLE_LOADER: "$(TEST_HOST)"
 
 schemes:
-  StarshipDontPop:
+  StarBarge:
     build:
       targets:
-        StarshipDontPop: all
-        StarshipDontPopTests: [test]
+        StarBarge: all
+        StarBargeTests: [test]
     run:
       config: Debug
       storeKitConfiguration: StoreKit/Products.storekit
     test:
       config: Debug
       targets:
-        - StarshipDontPopTests
+        - StarBargeTests
     archive:
       config: Release

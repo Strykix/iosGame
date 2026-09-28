@@ -1,5 +1,5 @@
 import XCTest
-@testable import StarshipDontPop
+@testable import StarBarge
 
 final class GameSimulationTests: XCTestCase {
     private let dt = 1.0 / 60
@@ -88,7 +88,7 @@ final class GameSimulationTests: XCTestCase {
     func testChallengeCodeRoundTrip() {
         let challenge = Challenge(seed: 123_456_789, score: 12_450)
         XCTAssertEqual(Challenge(code: challenge.code), challenge)
-        let url = URL(string: "starshipdontpop://challenge?seed=123456789&score=12450")
+        let url = URL(string: "starbarge://challenge?seed=123456789&score=12450")
         XCTAssertEqual(url.flatMap(Challenge.init(url:)), challenge)
     }
 

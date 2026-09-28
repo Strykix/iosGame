@@ -20,7 +20,7 @@
           "locale" : "fr"
         }
       ],
-      "productID" : "com.starship.pack.chrome",
+      "productID" : "com.indie.starbarge.pack.chrome",
       "referenceName" : "Chrome Pack",
       "type" : "NonConsumable"
     },
@@ -40,7 +40,7 @@
           "locale" : "fr"
         }
       ],
-      "productID" : "com.starship.pack.fleet",
+      "productID" : "com.indie.starbarge.pack.fleet",
       "referenceName" : "Fleet Pack",
       "type" : "NonConsumable"
     }

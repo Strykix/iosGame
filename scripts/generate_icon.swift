@@ -1,6 +1,6 @@
 #!/usr/bin/env swift
 // Generates the 1024×1024 App Store icon procedurally (no external assets).
-// Usage: swift scripts/generate_icon.swift StarshipDontPop/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+// Usage: swift scripts/generate_icon.swift StarBarge/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png
 import AppKit
 import CoreGraphics
 

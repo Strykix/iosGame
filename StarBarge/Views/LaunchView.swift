@@ -43,7 +43,7 @@ struct LaunchView: View {
                 .padding(.horizontal, 20)
 
                 VStack(spacing: -6) {
-                    Text("STARSHIP")
+                    Text("STARBARGE")
                         .font(Theme.display(30))
                         .foregroundStyle(.white.opacity(0.85))
                         .kerning(6)

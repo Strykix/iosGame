@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E0715B94C21BDE4FCD2850 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C55A7451B12B85B0B2DA5 /* Artwork.swift */; };
+		09D48B81B363F67AB2D92487 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = F4FB5397C99640B270E4046D /* GoogleMobileAds */; };
+		0A1414F6B0726E73EF18E5B2 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513961F42AE18780451CAE85 /* ShareCardView.swift */; };
+		12E0F4997B06857E540B6EF9 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E4C0EF31C9C3A60349CB8 /* GameViewModel.swift */; };
+		16EE41C9E6DE6127CCD6F09B /* GameSimulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AA7D548C1B87EF5360AD33 /* GameSimulationTests.swift */; };
+		1ACCA97EE86223278F670816 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8CDF12E5CE9B224A5F6FB1 /* ProfileStore.swift */; };
+		1F6B8AD626CAA079F52DCC33 /* HangarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2E8F7797ACAFC0383E08D /* HangarViewModel.swift */; };
+		28BD7C6AF1F4E0B586FE5838 /* AdMobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366734E2AFA989E592A56900 /* AdMobService.swift */; };
+		321304E77A5E0FD5DBBD224C /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CBBA5DEAD7B77C208004F /* HapticsService.swift */; };
+		32C2F1A222BBF22A0758E816 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467A1E53AC09A319762A4BE /* StoreService.swift */; };
+		35B26D830CD20A9A28AEB10A /* FailReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01112B8FD2ECB2AB2B9DAA7 /* FailReason.swift */; };
+		3951767265BBFCDE730A3E84 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2019C98C283546FBB3941 /* LaunchView.swift */; };
+		39BA66C2E698637A05653808 /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 8A572ADED73FD99D56A1C79F /* GoogleUserMessagingPlatform */; };
+		3C9F29AC7CCC5A24C2C17AFF /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7200FD0AECBCB1B948C48C82 /* Skin.swift */; };
+		40CE6714975A3FBCF0B4E4C3 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B3879CA7FF550BC0F30E7 /* SoundEngine.swift */; };
+		48A797254D600AB287EA3865 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFAD898E39E13FBBB8BE38 /* GameOverView.swift */; };
+		4E5F01D04B8B692B00DA87A5 /* GameSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613F9DAFF208A0CCCC37DEA5 /* GameSimulation.swift */; };
+		54D906D57253282710228C7A /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4506A80827F1AE2976B3B958 /* Components.swift */; };
+		583B2B532B3449E617ED8A27 /* AdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F037CF723F95C199ECED7 /* AdService.swift */; };
+		60E7DA32B83E7F2E9D1D8E39 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25B67486661E1D92E3A86908 /* Localizable.strings */; };
+		668585A5AA396CB66D8B4129 /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACECCAF56B06ECA36FDA1F6 /* GameConfig.swift */; };
+		6D3499120D9B09949AD50BFE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71045914461ACEDF38BD2227 /* RootView.swift */; };
+		725AF43400FD86DD604D64C1 /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB6E05BCD324E6B8CA785AE /* ShareService.swift */; };
+		B817D5BDD181E762BC90F151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F3DB992CD87357036313E8 /* Assets.xcassets */; };
+		CD19353A40482DE18D530D9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D4BF6C054AB44B7D1B6899C /* InfoPlist.strings */; };
+		CD5F5146D2D45A28303E8A6E /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBCB4A8C9CC396C289B474 /* SaveData.swift */; };
+		CD7882E3E5C794A6A2C34B1A /* HangarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B77CFB92FF663AFAEDB826 /* HangarView.swift */; };
+		CF9BE34D5E73BC8D980E47D6 /* StarBargeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900442213EFC0B51A00C593 /* StarBargeApp.swift */; };
+		D7028684900DD56362C872FC /* UIApplication+Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED82B297108D1542BF91990 /* UIApplication+Top.swift */; };
+		DE2810085902FC82CF8FD881 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E342075944EE931497B462 /* Obstacle.swift */; };
+		DEB9239829B07F1A4DD6F1A9 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF9B9564FFAD0E94C3F782 /* HUDView.swift */; };
+		DF3EEFFC532C02C615664F34 /* AppLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC7830E435307BE98BADBD /* AppLinks.swift */; };
+		FA0834BBDFE0FFD1A7F2F2D7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2AE6253036EB31F8DD4C5 /* GameScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5507B3B190BE529D1B82A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89083A81CE13F8DB2FA36D27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4086DC446747FF373AC0275;
+			remoteInfo = StarBarge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ACECCAF56B06ECA36FDA1F6 /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		0BBFAD898E39E13FBBB8BE38 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		1CDCB6FD4195E683672EF908 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2AB2E8F7797ACAFC0383E08D /* HangarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangarViewModel.swift; sourceTree = "<group>"; };
+		366734E2AFA989E592A56900 /* AdMobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobService.swift; sourceTree = "<group>"; };
+		4506A80827F1AE2976B3B958 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		46AA7D548C1B87EF5360AD33 /* GameSimulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSimulationTests.swift; sourceTree = "<group>"; };
+		4CE2AE6253036EB31F8DD4C5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		513961F42AE18780451CAE85 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		5FB1C8A2696D4BCCF7EA090D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		613F9DAFF208A0CCCC37DEA5 /* GameSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSimulation.swift; sourceTree = "<group>"; };
+		63A2019C98C283546FBB3941 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		6E9C55A7451B12B85B0B2DA5 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		71045914461ACEDF38BD2227 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		7200FD0AECBCB1B948C48C82 /* Skin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		7ACF9B9564FFAD0E94C3F782 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		7ED82B297108D1542BF91990 /* UIApplication+Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Top.swift"; sourceTree = "<group>"; };
+		82F3DB992CD87357036313E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8467A1E53AC09A319762A4BE /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		8B8CDF12E5CE9B224A5F6FB1 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		8BBC7830E435307BE98BADBD /* AppLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLinks.swift; sourceTree = "<group>"; };
+		8CB6E05BCD324E6B8CA785AE /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
+		8D4EFD255CD3A5C27D5C9A90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		933F037CF723F95C199ECED7 /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
+		BA9BE67F02F83201AA6DF4EC /* StarBarge.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StarBarge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02CBBA5DEAD7B77C208004F /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		D01112B8FD2ECB2AB2B9DAA7 /* FailReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailReason.swift; sourceTree = "<group>"; };
+		DBDBCB4A8C9CC396C289B474 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		DE2ED1D3CDB4C2705C110557 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+		DE99D368E958C1A81933900A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E900442213EFC0B51A00C593 /* StarBargeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarBargeApp.swift; sourceTree = "<group>"; };
+		EA27F4AAA5576EC06413A9A8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC338B34CBADCABB368693E6 /* StarBargeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StarBargeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9E4C0EF31C9C3A60349CB8 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F33962FB244533F2408D823F /* Products.storekit */ = {isa = PBXFileReference; path = Products.storekit; sourceTree = "<group>"; };
+		F5E342075944EE931497B462 /* Obstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		F6B77CFB92FF663AFAEDB826 /* HangarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangarView.swift; sourceTree = "<group>"; };
+		F8DE6E19BD6C1BF9E35A3D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD4B3879CA7FF550BC0F30E7 /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E484DF001A19E906334DF1AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D48B81B363F67AB2D92487 /* GoogleMobileAds in Frameworks */,
+				39BA66C2E698637A05653808 /* GoogleUserMessagingPlatform in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ACF68CA662A756785A48431 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4506A80827F1AE2976B3B958 /* Components.swift */,
+				0BBFAD898E39E13FBBB8BE38 /* GameOverView.swift */,
+				F6B77CFB92FF663AFAEDB826 /* HangarView.swift */,
+				7ACF9B9564FFAD0E94C3F782 /* HUDView.swift */,
+				63A2019C98C283546FBB3941 /* LaunchView.swift */,
+				71045914461ACEDF38BD2227 /* RootView.swift */,
+				513961F42AE18780451CAE85 /* ShareCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1BCCC5C31F49B08E9D449380 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA9BE67F02F83201AA6DF4EC /* StarBarge.app */,
+				EC338B34CBADCABB368693E6 /* StarBargeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A3B59E778E9370BE18FA285 /* StarBargeTests */ = {
+			isa = PBXGroup;
+			children = (
+				46AA7D548C1B87EF5360AD33 /* GameSimulationTests.swift */,
+			);
+			path = StarBargeTests;
+			sourceTree = "<group>";
+		};
+		5EBAB0D2290BE2372D6D0E3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D01112B8FD2ECB2AB2B9DAA7 /* FailReason.swift */,
+				DBDBCB4A8C9CC396C289B474 /* SaveData.swift */,
+				7200FD0AECBCB1B948C48C82 /* Skin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		709CAAA0210CF0F59ECF3DFB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8BBC7830E435307BE98BADBD /* AppLinks.swift */,
+				E900442213EFC0B51A00C593 /* StarBargeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74E937B9D0E33BD2AE287894 /* StarBarge */ = {
+			isa = PBXGroup;
+			children = (
+				709CAAA0210CF0F59ECF3DFB /* App */,
+				C9B32CFF40093974EB10BA09 /* Game */,
+				5EBAB0D2290BE2372D6D0E3F /* Models */,
+				C4C2B5A35E95D2FABD8AC4A9 /* Resources */,
+				F221E8A4100093BD525E82F4 /* Services */,
+				EB265A2215056614626A00AD /* ViewModels */,
+				1ACF68CA662A756785A48431 /* Views */,
+				F8DE6E19BD6C1BF9E35A3D1D /* Info.plist */,
+			);
+			path = StarBarge;
+			sourceTree = "<group>";
+		};
+		8F8616846CADCC4BCCA5D76D = {
+			isa = PBXGroup;
+			children = (
+				74E937B9D0E33BD2AE287894 /* StarBarge */,
+				3A3B59E778E9370BE18FA285 /* StarBargeTests */,
+				E0E64CCB602CA2767DB49C67 /* StoreKit */,
+				DE2ED1D3CDB4C2705C110557 /* project.yml */,
+				1CDCB6FD4195E683672EF908 /* README.md */,
+				1BCCC5C31F49B08E9D449380 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4C2B5A35E95D2FABD8AC4A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D4BF6C054AB44B7D1B6899C /* InfoPlist.strings */,
+				25B67486661E1D92E3A86908 /* Localizable.strings */,
+				82F3DB992CD87357036313E8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9B32CFF40093974EB10BA09 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				6E9C55A7451B12B85B0B2DA5 /* Artwork.swift */,
+				0ACECCAF56B06ECA36FDA1F6 /* GameConfig.swift */,
+				4CE2AE6253036EB31F8DD4C5 /* GameScene.swift */,
+				613F9DAFF208A0CCCC37DEA5 /* GameSimulation.swift */,
+				F5E342075944EE931497B462 /* Obstacle.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		E0E64CCB602CA2767DB49C67 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				F33962FB244533F2408D823F /* Products.storekit */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		EB265A2215056614626A00AD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EC9E4C0EF31C9C3A60349CB8 /* GameViewModel.swift */,
+				2AB2E8F7797ACAFC0383E08D /* HangarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F221E8A4100093BD525E82F4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				366734E2AFA989E592A56900 /* AdMobService.swift */,
+				933F037CF723F95C199ECED7 /* AdService.swift */,
+				C02CBBA5DEAD7B77C208004F /* HapticsService.swift */,
+				8B8CDF12E5CE9B224A5F6FB1 /* ProfileStore.swift */,
+				8CB6E05BCD324E6B8CA785AE /* ShareService.swift */,
+				FD4B3879CA7FF550BC0F30E7 /* SoundEngine.swift */,
+				8467A1E53AC09A319762A4BE /* StoreService.swift */,
+				7ED82B297108D1542BF91990 /* UIApplication+Top.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B2CB3D64EBCFC79370BD03 /* StarBargeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55950CDB304F08B196D5B039 /* Build configuration list for PBXNativeTarget "StarBargeTests" */;
+			buildPhases = (
+				502024BB1A2A91783ABEFB71 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775487B441A646F63976DEDE /* PBXTargetDependency */,
+			);
+			name = StarBargeTests;
+			packageProductDependencies = (
+			);
+			productName = StarBargeTests;
+			productReference = EC338B34CBADCABB368693E6 /* StarBargeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4086DC446747FF373AC0275 /* StarBarge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56E6F0F6D10CBE1B0C891FB2 /* Build configuration list for PBXNativeTarget "StarBarge" */;
+			buildPhases = (
+				BBAF8344E25E59189A9C0896 /* Sources */,
+				6140A6DA199AF5116D9A519E /* Resources */,
+				E484DF001A19E906334DF1AD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarBarge;
+			packageProductDependencies = (
+				F4FB5397C99640B270E4046D /* GoogleMobileAds */,
+				8A572ADED73FD99D56A1C79F /* GoogleUserMessagingPlatform */,
+			);
+			productName = StarBarge;
+			productReference = BA9BE67F02F83201AA6DF4EC /* StarBarge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89083A81CE13F8DB2FA36D27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E4086DC446747FF373AC0275 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A3B68CDCC9EAB6592A499822 /* Build configuration list for PBXProject "StarBarge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				fr,
+			);
+			mainGroup = 8F8616846CADCC4BCCA5D76D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				87E5CBB2CFCF1D47D829DA91 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				65885FD8D8CD7F72D9F598E2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1BCCC5C31F49B08E9D449380 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4086DC446747FF373AC0275 /* StarBarge */,
+				13B2CB3D64EBCFC79370BD03 /* StarBargeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6140A6DA199AF5116D9A519E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B817D5BDD181E762BC90F151 /* Assets.xcassets in Resources */,
+				CD19353A40482DE18D530D9F /* InfoPlist.strings in Resources */,
+				60E7DA32B83E7F2E9D1D8E39 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		502024BB1A2A91783ABEFB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EE41C9E6DE6127CCD6F09B /* GameSimulationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAF8344E25E59189A9C0896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BD7C6AF1F4E0B586FE5838 /* AdMobService.swift in Sources */,
+				583B2B532B3449E617ED8A27 /* AdService.swift in Sources */,
+				DF3EEFFC532C02C615664F34 /* AppLinks.swift in Sources */,
+				04E0715B94C21BDE4FCD2850 /* Artwork.swift in Sources */,
+				54D906D57253282710228C7A /* Components.swift in Sources */,
+				35B26D830CD20A9A28AEB10A /* FailReason.swift in Sources */,
+				668585A5AA396CB66D8B4129 /* GameConfig.swift in Sources */,
+				48A797254D600AB287EA3865 /* GameOverView.swift in Sources */,
+				FA0834BBDFE0FFD1A7F2F2D7 /* GameScene.swift in Sources */,
+				4E5F01D04B8B692B00DA87A5 /* GameSimulation.swift in Sources */,
+				12E0F4997B06857E540B6EF9 /* GameViewModel.swift in Sources */,
+				DEB9239829B07F1A4DD6F1A9 /* HUDView.swift in Sources */,
+				CD7882E3E5C794A6A2C34B1A /* HangarView.swift in Sources */,
+				1F6B8AD626CAA079F52DCC33 /* HangarViewModel.swift in Sources */,
+				321304E77A5E0FD5DBBD224C /* HapticsService.swift in Sources */,
+				3951767265BBFCDE730A3E84 /* LaunchView.swift in Sources */,
+				DE2810085902FC82CF8FD881 /* Obstacle.swift in Sources */,
+				1ACCA97EE86223278F670816 /* ProfileStore.swift in Sources */,
+				6D3499120D9B09949AD50BFE /* RootView.swift in Sources */,
+				CD5F5146D2D45A28303E8A6E /* SaveData.swift in Sources */,
+				0A1414F6B0726E73EF18E5B2 /* ShareCardView.swift in Sources */,
+				725AF43400FD86DD604D64C1 /* ShareService.swift in Sources */,
+				3C9F29AC7CCC5A24C2C17AFF /* Skin.swift in Sources */,
+				40CE6714975A3FBCF0B4E4C3 /* SoundEngine.swift in Sources */,
+				CF9BE34D5E73BC8D980E47D6 /* StarBargeApp.swift in Sources */,
+				32C2F1A222BBF22A0758E816 /* StoreService.swift in Sources */,
+				D7028684900DD56362C872FC /* UIApplication+Top.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		775487B441A646F63976DEDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4086DC446747FF373AC0275 /* StarBarge */;
+			targetProxy = B5507B3B190BE529D1B82A87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25B67486661E1D92E3A86908 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D4EFD255CD3A5C27D5C9A90 /* en */,
+				EA27F4AAA5576EC06413A9A8 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6D4BF6C054AB44B7D1B6899C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE99D368E958C1A81933900A /* en */,
+				5FB1C8A2696D4BCCF7EA090D /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A65951B2705F6E3FA6C19C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indie.starbarge.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarBarge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarBarge";
+			};
+			name = Release;
+		};
+		9315F93B9BF1FA635129FF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indie.starbarge.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarBarge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarBarge";
+			};
+			name = Debug;
+		};
+		AF0D803E13B53F66A2063AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADMOB_APP_ID = "ca-app-pub-3940256099942544~1458002511";
+				ADMOB_REWARDED_UNIT_ID = "ca-app-pub-3940256099942544/1712485313";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = StarBarge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indie.starbarge;
+				PRODUCT_NAME = StarBarge;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AFF4C292134C672A86DE30A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1B987858479874C8DCC2C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F7E9618700B4A8B434BEC721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADMOB_APP_ID = "ca-app-pub-3940256099942544~1458002511";
+				ADMOB_REWARDED_UNIT_ID = "ca-app-pub-3940256099942544/1712485313";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = StarBarge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indie.starbarge;
+				PRODUCT_NAME = StarBarge;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55950CDB304F08B196D5B039 /* Build configuration list for PBXNativeTarget "StarBargeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9315F93B9BF1FA635129FF8F /* Debug */,
+				0A65951B2705F6E3FA6C19C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		56E6F0F6D10CBE1B0C891FB2 /* Build configuration list for PBXNativeTarget "StarBarge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E9618700B4A8B434BEC721 /* Debug */,
+				AF0D803E13B53F66A2063AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3B68CDCC9EAB6592A499822 /* Build configuration list for PBXProject "StarBarge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF4C292134C672A86DE30A6 /* Debug */,
+				F1B987858479874C8DCC2C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65885FD8D8CD7F72D9F598E2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+		87E5CBB2CFCF1D47D829DA91 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A572ADED73FD99D56A1C79F /* GoogleUserMessagingPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65885FD8D8CD7F72D9F598E2 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */;
+			productName = GoogleUserMessagingPlatform;
+		};
+		F4FB5397C99640B270E4046D /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E5CBB2CFCF1D47D829DA91 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 89083A81CE13F8DB2FA36D27 /* Project object */;
+}

@@ -72,11 +72,21 @@ struct HangarView: View {
                         .padding(.horizontal, 14)
                         .background(Color.white.opacity(0.07), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                     }
-                    Text("legal.parody")
-                        .font(.system(size: 11, weight: .medium, design: .rounded))
-                        .foregroundStyle(.white.opacity(0.4))
-                        .frame(maxWidth: .infinity)
-                        .multilineTextAlignment(.center)
+                    VStack(spacing: 8) {
+                        // Apple 5.1.1: the privacy policy must be reachable from inside the app.
+                        if let privacyPolicy = AppLinks.privacyPolicy {
+                            Link(destination: privacyPolicy) {
+                                Label("legal.privacy", systemImage: "lock.shield")
+                                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                                    .foregroundStyle(.white.opacity(0.75))
+                            }
+                        }
+                        Text("legal.parody")
+                            .font(.system(size: 11, weight: .medium, design: .rounded))
+                            .foregroundStyle(.white.opacity(0.4))
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(maxWidth: .infinity)
                 }
                 .padding(20)
             }
